@@ -1,7 +1,7 @@
 import ballerina/http;
 
-# Http listener -> Opens port 9090
-listener http:Listener httpListener = new (9090);
+# Http listener -> Opens port 9000
+listener http:Listener httpListener = new (9000);
 
 service /api on httpListener {
     resource function get projects() returns ProjectEntry[] {
